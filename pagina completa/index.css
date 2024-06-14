@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(226, 43, 43);
+}   
+
+button:hover{
+    background-color: rgb(139, 8, 8);
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+    
+}
+header{
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #000000, #f90202, #000000);
+    background: linear-gradient(to right, #000000, #ff0000, #000000);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size:4.0em;
+    
+}
+header .conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    text-align: center;
+}
+header a{
+    padding: 3px 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("river.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: whitee
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+
+}
+#nuestros-programas .container{
+    padding: 100px 0px;
+}
+#nuestros-programas{
+    background-color: rgba(30,30,30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+#nuestros-programas p{
+    display: none;
+}
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 10px 30px;
+     background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #000000, #f90202, #000000);
+    background: linear-gradient(to right, #000000, #ff0000, #000000);
+    
+}
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    width: 300px;
+    height: 300px;
+}
+#elemento_ button{
+    background-color: rgb(255, 0, 0);
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 30%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    justify-content: center;
+    display: flex;
+    
+}
+
+#aplica-ya{
+    background-color: #000000e0;
+    color: white;
+}
+#caracteristicas{
+    white-space: nowrap;
+    animation: desplazar 200s linear infinite;
+    overflow:hidden;
+}
+@keyframes desplazar{
+    0% {
+        transform: translateX(100%); /* Comienza desde la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina en la izquierda */
+    }
+}
+
+.elemento{
+    animation: desplazar 45s linear infinite;
+}
+    
+    @keyframes desplazar {
+        0% {
+            transform: translateX(100%); /* Comienza desde la derecha */
+        }
+        100% {
+            transform: translateX(-4000%); /* Termina en la izquierda */
+        }
+}
+
